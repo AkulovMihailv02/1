@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+<body>
+    <h2>Task 2: Array Manipulation</h2>
+    <script>
+        // Task 2: Array Manipulation
+        var fruits = ["апельсин", "банан", "груша"];
+
+        document.write("<p>Number of fruits: " + fruits.length + "</p>");
+
+        // Add fruits to the array
+        fruits.unshift("грейпфрут");
+        fruits.push("яблоко", "ананас");
+
+        document.write("<p>Number of fruits after adding: " + fruits.length + "</p>");
+
+        // Remove first and last elements from the array
+        fruits.shift();
+        fruits.pop();
+
+        document.write("<p>Number of fruits after removing: " + fruits.length + "</p>");
+
+        // Output the array contents
+        document.write("<p>Fruits: " + fruits.join(", ") + "</p>");
+    </script>
+
+    <h2>Task 3: If-else Statement</h2>
+    <script>
+        // Task 3: If-else Statement
+        var students = ["Абаканов Сергей", "Гагарин Матвей", "Хантухова Лейла", "Алалина Алина", "Сакуров Иоган"];
+
+        if (students.length >= 3) {
+            document.write("<p>Big array with at least 3 elements.</p>");
+        } else {
+            document.write("<p>Small array with less than 3 elements.</p>");
+        }
+    </script>
+
+    <h2>Task 4: Multiple Conditions</h2>
+    <script>
+        // Task 4: Multiple Conditions
+        var students2 = ["Дмитрий", "Алексей", "Петр", "Виктор"];
+
+        if (students2.length === 4 && students2[students2.length - 1] === "Виктор") {
+            document.write("<p>This array suits me.</p>");
+        } else {
+            document.write("<p>This array does not suit me.</p>");
+        }
+    </script>
+
+    <h2>Task 5: Multiple Conditions for Traffic Lights</h2>
+    <script>
+        // Task 5: Multiple Conditions for Traffic Lights
+        var signal = "красный";
+
+        if (signal === "красный") {
+            document.write("<p>Stand still.</p>");
+        } else if (signal === "желтый") {
+            document.write("<p>Get ready.</p>");
+        } else {
+            document.write("<p>You can go.</p>");
+        }
+    </script>
+
+    <h2>Task 6: Array Iteration with While Loop</h2>
+    <script>
+        // Task 6: Array Iteration with While Loop
+        var students3 = ['Абаканов Сергей', 'Алалина Алина', 'Гагарин Матвей', 'Хантухова Лейла', 'Викторов Сергей', 'Масалкин Андрей', 'Петравкин Алексей', 'Московин Павел', 'Данилов Станислав'];
+        var i = students3.indexOf('Гагарин Матвей'); // Начальный индекс
+        var end = students3.indexOf('Петравкин Алексей'); // Конечный индекс
+
+        while (i <= end) {
+            document.write("<p>" + students3[i] + "</p>");
+            i++;
+        }
+    </script>
+
+    <h2>Task 7: For Loop</h2>
+    <script>
+        // Task 7: For Loop
+        for (var j = 1; j <= 7; j++) {
+            document.write("<p>Квадрат " + j + " = " + (j * j) + "</p>");
+        }
+    </script>
+</body>
+</html>
